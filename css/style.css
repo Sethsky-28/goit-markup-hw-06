@@ -753,6 +753,7 @@ figure {
     left: 0px;
     transition-property: visibilty, opacity;
     transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     opacity: 1;
     pointer-events: auto; 
 }
@@ -811,6 +812,26 @@ figure {
     background-color: var(--ocean);
     color: var(--white);
 }
+
+.modal-header {
+    position: relative;
+    top: 72px;    
+}
+
+.modal-header-item {
+    color: var(--navyblue);
+    text-align: center;
+    font-family: Roboto;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 1.5em;
+    letter-spacing: 0.32px;
+}
+
+
+
+
 
 
 
