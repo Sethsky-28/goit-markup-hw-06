@@ -577,6 +577,53 @@ figure {
     background-color: var(--green)
 }
 
+.container-subscribe {
+    display: block;
+    flex-shrink: 0;
+    margin-left: 80px;
+    row-gap: 16px;
+}
+
+.subscribe {
+    color: var(--WHITE, #FFF);
+    font-family: Roboto;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 1.5em;
+    letter-spacing: 0.32px;
+    margin-bottom: 16px;
+}
+
+.button-subscribe {
+    display: flex;
+    padding: 8px 24px;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+    border-radius: 4px;
+    background: var(--IRIS, #4D5AE5);
+    margin-left: 24px;
+    color: var(--WHITE, #FFF);
+    text-align: center;
+    font-family: Roboto;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 1.5em;
+    letter-spacing: 0.64px;
+    width: 165px;
+    height: 40px;
+}
+
+.subscribe-icon-link {
+    background-color: var(--IRIS);
+}
+
+.subscribe-icon-link {
+    fill: var(--WHITE);
+}
+
 .filters {
     padding: 96px 0px 0px 0px;
     margin: 0px auto;
@@ -920,17 +967,6 @@ label.checkbox {
     height: 24px;
     flex-shrink: 0;
 }
-
-
-
-
-
-
-
-
-
-
-
 
 
 
