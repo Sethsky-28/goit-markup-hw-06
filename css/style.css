@@ -584,6 +584,32 @@ figure {
     row-gap: 16px;
 }
 
+.form-label {
+    display: block;
+    color: var(--white);
+    font-weight: 500;
+}
+
+.subscribe-form-input {
+    color: var(--white);
+    width: 264px;
+    height: 40px;
+    padding: 8px 16px;
+    display: flex;
+    margin-top: 16px;
+    font-size: 14px;
+    flex-shrink: 0;
+    background: var(--navyblue);
+    border-radius: 4px;
+    border: 1px solid var(--white);
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+}
+
+.subscribe-form {
+    display: flex;
+    align-items: flex-end;
+}
+            
 .subscribe {
     color: var(--WHITE, #FFF);
     font-family: Roboto;
@@ -596,32 +622,32 @@ figure {
 }
 
 .button-subscribe {
-    display: flex;
+    display: inline-flex;
     padding: 8px 24px;
     justify-content: center;
     align-items: center;
-    gap: 16px;
-    border-radius: 4px;
-    background: var(--IRIS, #4D5AE5);
-    margin-left: 24px;
-    color: var(--WHITE, #FFF);
-    text-align: center;
-    font-family: Roboto;
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 500;
-    line-height: 1.5em;
-    letter-spacing: 0.64px;
-    width: 165px;
     height: 40px;
+    gap: 16px;
+    margin-left: 24px;
+    border: none;
+    font-weight: 500;
+    line-height: 24px;
+    letter-spacing: 0.64px;
+    border-radius: 4px;
+    color: var(--white);
+    background: var(--iris);
+    cursor: pointer;
+    transition-property: background-color, color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.button-subscribe svg{
+    background-color: var(--ocean);
 }
 
 .subscribe-icon-link {
-    background-color: var(--IRIS);
-}
-
-.subscribe-icon-link {
-    fill: var(--WHITE);
+    fill: var(--white);   
 }
 
 .filters {
@@ -887,7 +913,6 @@ figure {
     display: block;
     flex-direction: column;
     align-items: flex-start;
-    /* margin-top: 16px; */
 }
 
 .modal-name {
@@ -898,8 +923,7 @@ figure {
     font-style: normal;
     font-weight: 400;
     line-height: 1.16em;
-    letter-spacing: 0.48px;
-    
+    letter-spacing: 0.48px;    
 }
 
 .modal-input {
@@ -912,8 +936,7 @@ figure {
     border-radius: 4px;
     border: 1px solid var(--iris);
     stroke: currentColor;
-    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-      
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);      
 }
 
 /* .label-item {

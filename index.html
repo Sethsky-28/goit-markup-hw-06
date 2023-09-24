@@ -389,16 +389,19 @@
                 </div>
 
                 <div class="container-subscribe" for="subscription">
-                    <h3 class="subscribe">Subscribe</h3>
-                    <input class="subscribe-input" type="text" name="subscription" placeholder="E-mail">                
+                    <form class="subscribe-form" name="subscription" >
+                        <label class="form-label">
+                            Subscribe
+                            <input class="subscribe-form-input" type="email" name="email" placeholder="E-mail" />
+                        </label>
+                
+                        <button class="button-subscribe">Subscribe
+                            <svg class="subscribe-icon-link" width="24" height="20">
+                                <use href="images/footer-form-sprite.svg#send-button-icon" />
+                            </svg>                
+                        </button>
+                    </form>    
                 </div>
-                <button class="button-subscribe">Subscribe
-                    <a href="#" class="subscribe-icon-link">
-                        <svg width="24" height="20">
-                            <use href="images/modal-sprite.svg#send-button-icon" />
-                        </svg>
-                    </a>
-                </button>
             </div>
         </section>
     </footer>
