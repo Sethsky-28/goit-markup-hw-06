@@ -833,13 +833,14 @@ figure {
     font-weight: 500;
     line-height: 1.5em;
     letter-spacing: 0.32px;
+    margin-bottom: 16px;
 }
 
 .modal-form {
     display: block;
     flex-direction: column;
     align-items: flex-start;
-    margin-top: 16px;
+    /* margin-top: 16px; */
 }
 
 .modal-name {
@@ -851,22 +852,26 @@ figure {
     font-weight: 400;
     line-height: 1.16em;
     letter-spacing: 0.48px;
-    margin-bottom: 8px;    
+    
 }
 
 .modal-input {
-    display: block;
-    width: 100%;
-    margin-top: 8px;
-    height: 40px;    
+    display: relative;
+    width: 360px;
+    height: 40px;
+    margin-top: 8px;      
     font-family: inherit;
     font-size: 12px;
     border-radius: 4px;
     border: 1px solid var(--iris);
     stroke: currentColor;
-    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);    
-    
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+      
 }
+
+/* .label-item {
+    margin-bottom: 8px;      
+} */
 
 label.checkbox {
     display: flex;
@@ -882,30 +887,40 @@ label.checkbox {
 .form-textarea {
     display: block;
     width: 100%;
-    margin-top: 4px;
-   
+    /* margin-top: 4px; */
+    height: 120px;
+    flex-shrink: 0;
+  
 }
 
-.form-textarea textarea {
+.comment-textarea {
     resize: none;
     width: 100%;
     height: 150px;
+    margin-bottom: 4px;
 }
 
+/* .form-textarea placeholder {
+    resize: none;
+    width: 100%;
+    height: 150px;
+} */
+
 .input-icon {
-    color: var(--navyblue);
+    color: var(-- navyblue);
     font-family: Roboto;
     font-size: 12px;
     font-style: normal;
     font-weight: 400;
     line-height: 1.16;
     letter-spacing: 0.48px;        
-    position: absolute;
-    transform: translate(70%,-130%);
+    position: relative;
+    transform: translate(50%,-130%);
     width: 18px;
     height: 24px;
     flex-shrink: 0;
 }
+
 
 
 
