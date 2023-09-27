@@ -21,14 +21,14 @@
     <header class="header">
         <div class="container-header">
             <nav class="nav">
-                <a class="nav-logo" href="https://sethsky-28.github.io/goit-markup-hw-05/" class="nav-logo">
+                <a class="nav-logo" href="https://sethsky-28.github.io/goit-markup-hw-06/" class="nav-logo">
                     <span class="iris">WEB</span>STUDIO
                 </a>
         
             <ul class="nav-list">
-                <li class="nav-item"><a class="nav-link active" href="/goit-markup-hw-05/index.html">Studio</a></li>
-                <li class="nav-item"><a class="nav-link" href="/goit-markup-hw-05/portfolio.html">Portfolio</a></li>
-                <li class="nav-item"><a class="nav-link" href="/goit-markup-hw-05/index.html">Contacts</a></li>
+                <li class="nav-item"><a class="nav-link active" href="/goit-markup-hw-06/index.html">Studio</a></li>
+                <li class="nav-item"><a class="nav-link" href="/goit-markup-hw-06/portfolio.html">Portfolio</a></li>
+                <li class="nav-item"><a class="nav-link" href="/goit-markup-hw-06/index.html">Contacts</a></li>
             </ul>
             </nav>
 
@@ -343,7 +343,7 @@
         <section class="footer">
             <div class="container container-footer">
                 <div class="logo-description">
-                    <a class="footer-logo" href="https://sethsky-28.github.io/goit-markup-hw-04/" class="footer-logo">
+                    <a class="footer-logo" href="https://sethsky-28.github.io/goit-markup-hw-06/" class="footer-logo">
                         <span class="iris">WEB</span>STUDIO</a>
                     <p class="footer-description">Increase the flow of customers and <br> sales for your business with
                         digital
@@ -392,7 +392,7 @@
                     <form class="subscribe-form" name="subscription" >
                         <label class="form-label">
                             Subscribe
-                            <input class="subscribe-form-input" type="email" name="email" placeholder="E-mail" />
+                            <input class="subscribe-form-input" type="email" name="email" placeholder="E-mail" required/>
                         </label>
                 
                         <button class="button-subscribe">Subscribe
@@ -409,8 +409,7 @@
     <div class="modal is-hidden" data-modal>
         <div class="modal-content">
             <button class="modal-close" data-modal-close>               
-                <svg width="8" height="8">
-    
+                <svg width="8" height="8">    
                     <use href="images/close-sprite.svg#close-icon" />
                 </svg>
             </button>
@@ -420,7 +419,7 @@
             <form class="modal-form">
                 <label class="modal-name" for="name">
                     <span class="label-item">Name</span>
-                    <input class="modal-input" type="text" name="name">
+                    <input class="modal-input" type="text" name="name" required>
                     <svg class="input-icon" width="18" height="18">
                         <use href="images/modal-sprite.svg#person-form"/>
                     </svg>
@@ -428,7 +427,7 @@
 
                 <label class="modal-name" for="phone">
                     <span class="label-item">Phone</span>
-                    <input class="modal-input" type="text" name="phone">
+                    <input class="modal-input" type="text" name="phone" required>
                     <svg class="input-icon" width="18" height="18">
                         <use href="images/modal-sprite.svg#phone-form" />
                     </svg>
@@ -436,7 +435,7 @@
 
                 <label class="modal-name" for="email">
                     <span class="label-item">Email</span>
-                    <input class="modal-input" type="text" name="email">
+                    <input class="modal-input" type="text" name="email" required>
                     <svg class="input-icon" width="18" height="18">
                         <use href="images/modal-sprite.svg#email-form" />
                     </svg>
@@ -444,12 +443,15 @@
 
                 <label class="form-textarea" >
                     <span class="label-item">Comment</span>
-                    <textarea name="comment" class="comment-textarea" placeholder="Text Input"></textarea>
+                    <textarea class="comment-textarea" name="comment" placeholder="Text Input" required></textarea>
                 </label>
                       
-                <label class="checkbox">
-                    <input class="checkbox-input" name="agree">
-                    I accept the terms and conditions of the Privacy Policy                    
+                <label class="checkbox-label" for="terms">
+                    <input class="checkbox-input" name="terms">
+                    <svg class="checkbox-icon" width="10" height="8">
+                        <use href="images/modal-sprite.svg#check-form" />
+                    </svg>
+                    <span class="checkbox-text">I accept the terms and conditions of the Privacy Policy</span>
                 </label>
 
                 <div class="send-button-container">
