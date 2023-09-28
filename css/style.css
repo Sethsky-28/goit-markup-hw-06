@@ -886,20 +886,20 @@ figure {
     appearance: none;
 }
 
-/* .checkbox-input {
+.checkbox-input {
     width: 16px;
     height: 14px;
     border: 1px solid var(--lightslate);
     border-radius: 2px;
     fill: currentColor;
     background-color: var(--white);
-} */
+}
 
 .checkbox-icon-light {
     position: absolute;
     top: 50%;
     left: 0;
-    opacity: .4;
+    opacity: 0;
     transform: translateY(-50%);
     transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -908,7 +908,7 @@ figure {
     position: absolute;
     top: 50%;
     left: 0;
-    opacity: 0;
+    opacity: .4;
     transform: translateY(-50%);
     transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -939,8 +939,7 @@ figure {
     cursor: pointer;
     transition-property: background-color;
     transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-   
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);   
 }
 
 .send-button-container {
