@@ -867,9 +867,11 @@ figure {
 
 .visually-hidden {
     position: absolute;
-    width: 1px;
-    height: 1px;
-    margin: -1px;
+    left: 0;
+    top: 0;
+    width: 16px;
+    height: 16px;
+    margin: 0;
     border: 0;
     padding: 0;
     opacity: 0;
@@ -886,6 +888,7 @@ figure {
     cursor: pointer;
     height: 16px;
     position: relative;
+    margin-bottom: 24px;
 }
 
 .checkbox-icon {
@@ -897,6 +900,35 @@ figure {
     fill: currentColor;
     background-color: var(--white);
 }
+
+.checkbox-input:checked + .checkbox-icon {
+    background-color: var(--ocean);
+    border-color: var(--ocean);
+}
+
+.checkbox-text {
+    color: var(--LIGHT-SLATE, #8E8F99);
+    font-family: Roboto;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.16em;
+    letter-spacing: 0.48px;
+}
+
+.terms-link {
+    color: var(--iris);
+    margin-left: 2px;
+    text-decoration: underline;
+    font-family: Roboto;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.16em;
+    letter-spacing: 0.48px;
+}
+
+/* Send Buuton */
 
 .send-button {
     color: var(--white);
