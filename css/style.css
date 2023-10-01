@@ -883,12 +883,13 @@ figure {
 }
 
 .label-terms {
-    background-color: var(--cloud);
     color: var(--white);
     cursor: pointer;
     height: 16px;
     position: relative;
     margin-bottom: 24px;
+    display: flex;
+    gap: 8px;
 }
 
 .checkbox-icon {
@@ -914,6 +915,7 @@ figure {
     font-weight: 400;
     line-height: 1.16em;
     letter-spacing: 0.48px;
+    padding-top: 2px;
 }
 
 .terms-link {
